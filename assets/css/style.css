@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box; /* Tự động tính toán lại kích thước */
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a,
+u,
+i {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.center-header,
+.right-header {
+    font-weight: 600;
+}
+
+.left-header a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 16 / 9;
+}
+
+.banner-detail {
+    position: absolute;
+    background-color: #fff3e3;
+    bottom: 100px;
+    right: 100px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    width: 900px;
+    max-width: 100%;
+}
+
+.banner-detail p:first-child {
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.banner-detail p {
+    font-weight: 600;
+    margin: 0;
+    /*  */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
+    /* ba chấm khi dài hơn 2 dòng */
+}
+
+.banner-detail h1 {
+    color: #b88e2f;
+    font-weight: 800;
+}
+
+.banner-detail br {
+    height: 0px;
+    display: block;
+}
+
+.banner-detail button {
+    background-color: #b88e2f;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 20px 50px;
+    margin-top: 20px;
+}
+
+.banner-detail button:hover {
+    opacity: 0.8;
+    transition: all linear 0.3s;
+}
